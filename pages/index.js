@@ -31,7 +31,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-windows-grey w-screen absolute bottom-0 border-windows-lightgrey border-t-4 flex justify-between	">
-        <div className='flex items-center border-b-windows-lightgrey border-r-windows-lightgrey border-t-windows-darkgrey border-l-windows-darkgrey border-l border-t border-b-2 border-r-2 m-1 px-2'>
+        <div className='flex items-center border-t-windows-lightgrey border-l-windows-lightgrey border-b-windows-darkgrey border-r-windows-darkgrey border-r border-b border-t-2 border-l-2 m-1 px-2'>
         <FontAwesomeIcon icon={faCartShopping} />
         <h2 className='ml-2'>Cart</h2>
         </div>
