@@ -13,7 +13,11 @@
 
 h1 { @apply text-2xl; }
 
-.active #toggle { visibility: visible; }
+.item.active.isvisible #toggle { display: inline-block; }
+
+footer .active.ishidden #toggle { @apply border-std inline-block; }
+footer .active #toggle{ @apply inline-block; }
+footer .cartactive { @apply border-active;}
 
 body { overflow: hidden; }
 
@@ -24,3 +28,4 @@ body { overflow: hidden; }
 .border-active {
 @apply  border-b-windows-lightgrey border-r-windows-lightgrey border-t-windows-darkgrey border-l-windows-darkgrey border-l border-t border-b-2 border-r-2;
 }
+
