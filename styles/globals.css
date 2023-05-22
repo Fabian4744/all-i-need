@@ -2,15 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  @apply text-2xl;
-}
+
 
 @font-face {
   font-family: "Windows";
   src: url('../src/fonts/Windows_Regular.ttf');
  }
 
-* {
-  font-family: "Windows";
+* { font-family: "Windows"; }
+
+h1 { @apply text-2xl; }
+
+.active #toggle { visibility: visible; }
+
+body { overflow: hidden; }
+
+.border-std { 
+@apply bg-windows-grey border-t-windows-lightgrey border-l-windows-lightgrey border-b-windows-darkgrey border-r-windows-darkgrey border-r border-b border-t-2 border-l-2;
+}
+
+.border-active {
+@apply  border-b-windows-lightgrey border-r-windows-lightgrey border-t-windows-darkgrey border-l-windows-darkgrey border-l border-t border-b-2 border-r-2;
 }
